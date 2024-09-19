@@ -22,7 +22,8 @@ gl.report.pa(
 )
 }
 \arguments{
-\item{x}{Name of the genlight object containing the SNP data [required].}
+\item{x}{Name of the genlight object containing the SNP or SilicoDArT data
+[required].}
 
 \item{x2}{If two separate genlight objects are to be compared this can be
 provided here, but they must have the same number of SNPs [default NULL].}
@@ -144,6 +145,7 @@ alternative to FST for quantifying genetic population differentiation. Genes,
 }
 \seealso{
 Other matched report: 
+\code{\link{gl.report.allna}()},
 \code{\link{gl.report.callrate}()},
 \code{\link{gl.report.hamming}()},
 \code{\link{gl.report.locmetric}()},
@@ -153,6 +155,9 @@ Other matched report:
 \code{\link{gl.report.reproducibility}()},
 \code{\link{gl.report.secondaries}()},
 \code{\link{gl.report.taglength}()}
+
+Other report functions: 
+\code{\link{gl.report.replicates}()}
 }
 \author{
 Custodian: Bernd Gruber -- Post to

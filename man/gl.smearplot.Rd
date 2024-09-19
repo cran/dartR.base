@@ -9,7 +9,8 @@ gl.smearplot(
   plot.display = TRUE,
   ind.labels = FALSE,
   label.size = 10,
-  plot.theme = theme_dartR(),
+  group.pop = FALSE,
+  plot.theme = NULL,
   plot.colors = NULL,
   plot.file = NULL,
   plot.dir = NULL,
@@ -28,8 +29,10 @@ gl.smearplot(
 
 \item{label.size}{Size of the individual labels [default 10].}
 
+\item{group.pop}{If ind.labels is TRUE, group by population [default TRUE].}
+
 \item{plot.theme}{Theme for the plot. See Details for options
-[default theme_dartR()].}
+[default NULL].}
 
 \item{plot.colors}{List of four color names for the column fill for homozygous reference,
 heterozygous, homozygous alternate, and missing value (NA) [default c("#0000FF","#00FFFF","#FF0000","#e0e0e0")].}

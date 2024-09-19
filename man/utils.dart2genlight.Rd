@@ -34,7 +34,7 @@ WARNING: UTILITY SCRIPTS ARE FOR INTERNAL USE ONLY AND SHOULD NOT BE USED BY END
 }
 \details{
 Converts a DArT file (read via \code{read.dart}) into an
-genlight object \code{\link{adegenet}}. #' Internal function called by gl.read.dart().
+genlight object from package adegenet. #' Internal function called by gl.read.dart().
 
 The ind.metadata file needs to have very specific headings. First a heading
 called id. Here the ids have to match the ids in the dart object
@@ -65,7 +65,8 @@ Other utilities:
 \code{\link{utils.recalc.freqhomsnp}()},
 \code{\link{utils.recalc.maf}()},
 \code{\link{utils.reset.flags}()},
-\code{\link{utils.transpose}()}
+\code{\link{utils.transpose}()},
+\code{\link{utils.vcfr2genlight.polyploid}()}
 }
 \author{
 Maintainer: Bernd Gruber (Post to \url{https://groups.google.com/d/forum/dartr})

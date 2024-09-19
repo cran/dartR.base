@@ -4,10 +4,17 @@
 \alias{gl.read.vcf}
 \title{Converts a vcf file into a genlight object}
 \usage{
-gl.read.vcf(vcf.file, verbose = NULL)
+gl.read.vcf(vcffile, ind.metafile = NULL, mode = NULL, verbose = NULL)
 }
 \arguments{
-\item{vcf.file}{A vcf file (works only for diploid data) [required].}
+\item{vcffile}{A vcf file (works only for diploid data) [required].}
+
+\item{ind.metafile}{Optional file in csv format with metadata for each
+individual (see details for explanation) [default NULL].}
+
+\item{mode}{"genotype" all heterozygous sites will be coded as 1 regardless ploidy level, 
+dosage: sites will be codes as copy number of alternate allele [default 2, 
+unless specified using gl.set.verbosity].}
 
 \item{verbose}{Verbosity: 0, silent or fatal errors; 1, begin and end; 2,
 progress log; 3, progress and results summary; 5, full report
@@ -17,27 +24,24 @@ progress log; 3, progress and results summary; 5, full report
 A genlight object.
 }
 \description{
-This function needs package vcfR, please install it. The converted genlight
-object does not have individual metrics. You need to add them 'manually' to
-the other$ind.metrics slot.
+This function needs package vcfR, please install it.
+}
+\details{
+The ind.metadata file needs to have very specific headings. First a heading
+called id. Here the ids have to match the ids in the dartR object. 
+The following column headings are optional.
+pop: specifies the population membership of each individual. lat and lon
+specify spatial coordinates (in decimal degrees WGS1984 format). Additional
+columns with individual metadata can be imported (e.g. age, gender).
+Note also that this function checks to see if there are input of mode, missing input of mode 
+will issue the user with an error. "Dosage" mode of this function assign ploidy levels as maximum copy number of alternate alleles. 
+Please carefully check the data if "dosage" mode is used.
 }
 \examples{
-# you need to provide the path to the vcf file
-#obj <- gl.read.vcf("yourvcffile.vcf", package='dartR.data'))
-
+\dontrun{
+obj <- gl.read.vcf(system.file('extdata/test.vcf', package='dartR'))
 }
-\seealso{
-Other io: 
-\code{\link{gl.load}()},
-\code{\link{gl.read.csv}()},
-\code{\link{gl.read.dart}()},
-\code{\link{gl.read.fasta}()},
-\code{\link{gl.read.silicodart}()},
-\code{\link{gl.save}()},
-\code{\link{gl.write.csv}()},
-\code{\link{utils.read.dart}()}
 }
 \author{
 Bernd Gruber (Post to \url{https://groups.google.com/d/forum/dartr})
 }
-\concept{io}

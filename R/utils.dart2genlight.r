@@ -15,7 +15,7 @@
 
 #' @details
 #' Converts a DArT file (read via \code{read.dart}) into an
-#' genlight object \code{\link{adegenet}}. #' Internal function called by gl.read.dart().
+#' genlight object from package adegenet. #' Internal function called by gl.read.dart().
 #' 
 #' The ind.metadata file needs to have very specific headings. First a heading
 #' called id. Here the ids have to match the ids in the dart object
@@ -322,6 +322,20 @@ utils.dart2genlight <- function(dart,
                 ))
             }
         }
+    }
+    
+    if (is.null(pop(gout)) |
+        is.na(length(pop(gout))) | length(pop(gout)) <= 0) {
+      if (verbose >= 1) {
+        cat(
+          warn(
+            "  Population assignments not detected, individuals assigned
+                    to a single population labelled 'pop1'\n"
+          )
+        )
+      }
+      pop(gout) <- array("pop1", dim = nInd(gout))
+      pop(gout) <- as.factor(pop(gout))
     }
     
     ord3 <- match(indNames(gout), names(sdata))
