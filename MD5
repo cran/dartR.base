@@ -1,4 +1,4 @@
-e5750b622b0b0ead2589d1362e098408 *DESCRIPTION
+991bc3d591574903b004d4d5dc26f99f *DESCRIPTION
 ac698dd1c6f92f25a97b94b7768948db *NAMESPACE
 d44ad91084dec431729455c2e84599f7 *R/gi2gl.R
 1aedcf06465c9a26c5f13cc429b7fae8 *R/gl.He.r
@@ -12,7 +12,7 @@ a76131c940326bc72f68dd2bfadd8e15 *R/gl.amova.r
 f27152c44acdeeec8b7da57a7f9461cf *R/gl.colors.r
 34a947340065c20e985bdab73943b77d *R/gl.compliance.check.r
 11708529449f3b52661810a2aec91822 *R/gl.define.pop.r
-1bfcfcc609b04920d5fe9afa58eedfdc *R/gl.diagnostics.hwe.r
+509692a01641f010bdc22c59e38c9022 *R/gl.diagnostics.hwe.r
 94b33e1908e6b0055a9bf1cb361257cc *R/gl.dist.ind.r
 6bbfbd7a0cdad3b5475d2f74baf5e4a6 *R/gl.dist.phylo.r
 c493d9f22892b3c417f9e3f01e55edbe *R/gl.dist.pop.r
@@ -133,7 +133,7 @@ cc9ec0db213a09c68b3e39e9852f7196 *R/gl2hiphop.r
 c2c4c5a8a2da01274abb5d58ca3c7d61 *R/gl2paup.svdquartets.r
 f8c536970c5a6dc39ee99bcbfe31aefc *R/gl2phylip.r
 c2a26e48a7c6a0089715af3a99b20ec6 *R/gl2plink.r
-6c7d3e17eb3e1526efd250a653130c71 *R/gl2related.r
+86aa0fd5fe2265126274427f7f87e515 *R/gl2related.r
 3be47d24df2fa6a6306af7ed3ebf0403 *R/gl2sa.r
 fa7984239b5664615f5028b0d1d53b39 *R/gl2snapper.r
 a1f32488d3f9eb7927cbb77973a1576e *R/gl2structure.r
@@ -317,7 +317,7 @@ fdaa05c387e99cb331bab7e24e08e8d0 *man/gl2gi.Rd
 e630d6b433b2aaf1b9465d3de26eb3c4 *man/gl2paup.svdquartets.Rd
 8bcb0fde7c19a8e16a94c706b92256ec *man/gl2phylip.Rd
 2e2cf7e522ca51483d48bc33ce401dcc *man/gl2plink.Rd
-fdf7356462d580314465b4bc9365e032 *man/gl2related.Rd
+1e54216572201983782ab8034a5fcb36 *man/gl2related.Rd
 43e85bfa08714a8a01bf03a80fe9c4d1 *man/gl2sa.Rd
 a7477ca682ff5ae6ab230815c0fb94cf *man/gl2snapper.Rd
 9bb2ef39778cc4e966cf8d089c385e89 *man/gl2structure.Rd

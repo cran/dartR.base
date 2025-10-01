@@ -1,8 +1,8 @@
 Package: dartR.base
 Type: Package
 Title: Analysing 'SNP' and 'Silicodart' Data - Basic Functions
-Version: 1.0.5
-Date: 2025-03-04
+Version: 1.0.7
+Date: 2025-10-01
 Authors@R: c(
             person("Bernd", "Gruber", email="bernd.gruber@canberra.edu.au", role=c("aut","cre")), 
             person("Arthur", "Georges", email="georges@aerg.edu.au", role="aut"),
@@ -50,7 +50,7 @@ Suggests: boot, devtools, directlabels, dismo, doParallel, expm,
 License: GPL (>= 3)
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-03-04 01:43:18 UTC; s425824
+Packaged: 2025-10-01 04:24:45 UTC; s425824
 Author: Bernd Gruber [aut, cre],
   Arthur Georges [aut],
   Jose L. Mijangos [aut],
@@ -67,4 +67,4 @@ URL: https://green-striped-gecko.github.io/dartR/
 BugReports: https://groups.google.com/g/dartr?pli=1
 Maintainer: Bernd Gruber <bernd.gruber@canberra.edu.au>
 Repository: CRAN
-Date/Publication: 2025-03-04 03:40:02 UTC
+Date/Publication: 2025-10-01 09:00:12 UTC
